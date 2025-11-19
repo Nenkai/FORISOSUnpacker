@@ -4,6 +4,14 @@ File unpacker for games built with the FORIS OS engine, used by VNs created by 0
 
 * S.S.D.S. Setsuna no Akogare
 
+## Usage
+Download the latest version from [Releases](https://github.com/Nenkai/BabylonsFallTools/releases).
+
+* Extract all `.cmp` files in a folder: `FORISOSUnpacker.exe extract-all -i <directory> [-o <output dir>]`
+
+> [!NOTE]  
+> Arguments wrapped in `<>` are required and `[]` are optional.
+
 ## Research Notes
 
 The engine uses an executable (entrypoint), main engine/front-end (`MainSystem.dll`) a bunch of modules (dlls), which exports `InitModule` and `ExitModule` functions.
