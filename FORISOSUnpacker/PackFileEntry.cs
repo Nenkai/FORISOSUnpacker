@@ -20,7 +20,7 @@ public class PackFileEntry
         FileOffset = sr.ReadInt32();
         byte nameLength = sr.ReadByte();
         CompressFlags = sr.ReadByte();
-        Unk0x06 = sr.ReadInt32();
+        Unk0x06 = sr.ReadInt32(); // Padding?
 
         Span<byte> strBuf = sr.ReadBytes(nameLength * 2);
         FileName = Encoding.Unicode.GetString(strBuf);
