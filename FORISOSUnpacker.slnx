@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="FORISOSUnpacker/FORISOSUnpacker.csproj" />
+  <Project Path="NenTools/NenTools.IO.Streams/NenTools.IO.Streams.csproj" />
 </Solution>
