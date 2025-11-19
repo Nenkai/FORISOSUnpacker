@@ -7,7 +7,7 @@ File unpacker (`PACK/*.cmp` files) for games built with the FORIS OS engine, use
 ## Usage
 Download the latest version from [Releases](https://github.com/Nenkai/FORISOSUnpacker/releases)
 
-* Extract all `.cmp` files in a folder: `FORISOSUnpacker.exe extract-all -i <directory> [-o <output dir>]`
+* Extract all `.cmp` files in a folder: `FORISOSUnpacker.exe extract -i <path to .CMP file> [-o <output dir>]`
 
 > [!NOTE]  
 > Arguments wrapped in `<>` are required and `[]` are optional.
