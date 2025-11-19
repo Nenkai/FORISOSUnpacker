@@ -5,7 +5,7 @@ File unpacker (`PACK/*.cmp` files) for games built with the FORIS OS engine, use
 * S.S.D.S. Setsuna no Akogare
 
 ## Usage
-Download the latest version from [Releases](https://github.com/Nenkai/BabylonsFallTools/releases).
+Download the latest version from [Releases](https://github.com/Nenkai/FORISOSUnpacker/releases)
 
 * Extract all `.cmp` files in a folder: `FORISOSUnpacker.exe extract-all -i <directory> [-o <output dir>]`
 
