@@ -1,6 +1,6 @@
 # FORISOSUnpacker
 
-File unpacker for games built with the FORIS OS engine, used by VNs created by 0verflow, mainly intended for:
+File unpacker (`PACK/*.cmp` files) for games built with the FORIS OS engine, used by VNs created by 0verflow, mainly intended for:
 
 * S.S.D.S. Setsuna no Akogare
 
