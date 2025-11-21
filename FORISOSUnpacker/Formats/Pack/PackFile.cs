@@ -1,19 +1,16 @@
-﻿using CommunityToolkit.HighPerformance;
-
-using NenTools.IO.Streams;
-
-using System;
+﻿using System;
 using System.Buffers.Binary;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 using Syroot.BinaryData.Memory;
 using Microsoft.Extensions.Logging;
 
-namespace FORISOSUnpacker;
+using NenTools.IO.Streams;
+
+namespace FORISOSUnpacker.Formats.Pack;
 
 internal class PackFile : IDisposable
 {
@@ -94,7 +91,7 @@ internal class PackFile : IDisposable
             if (lastEntry is not null)
             {
                 int fileHeaderSize = (entry.CompressFlags & 1) != 0 ? 4 : 0; // If compressed, there's a 4-byte decompressed size at the start of the file stream
-                int distance = (entry.FileOffset - lastEntry.FileOffset) - fileHeaderSize;
+                int distance = (entry.FileOffset - lastEntry.FileOffset) - fileHeaderSize; // There's probably a better way? Not sure honestly.
                 lastEntry.CompressedSize = distance;
             }
 

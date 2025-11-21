@@ -1,6 +1,6 @@
 # FORISOSUnpacker
 
-File unpacker (`PACK/*.cmp` files) for games built with the FORIS OS engine, used by VNs created by 0verflow, mainly intended for:
+File unpacker (`PACK/*.cmp` files), texture converter (`.BGD`/`.CGD`/`.TEXB`/`.CHR`/`.ALP`) for games built with the FORIS OS engine, used by VNs created by 0verflow, mainly intended for:
 
 * S.S.D.S. Setsuna no Akogare
 
@@ -8,6 +8,7 @@ File unpacker (`PACK/*.cmp` files) for games built with the FORIS OS engine, use
 Download the latest version from [Releases](https://github.com/Nenkai/FORISOSUnpacker/releases)
 
 * Extract all `.cmp` files in a folder: `FORISOSUnpacker.exe extract -i <path to .CMP file> [-o <output dir>]`
+* Texture conversion: Drag/drop file/folder containing relevant files, or pass a path directly through the command line.
 
 > [!NOTE]  
 > Arguments wrapped in `<>` are required and `[]` are optional.
@@ -41,3 +42,14 @@ The key is stored in `ssds.exe` as a Resource called `Binary`, 0x10 bytes. `Main
 * Set encryption key (FileSystem.mod): offset `10003D80` & `10004130`, sig: `8B 44 24 ? 8B 08 89 0D`
 * Open cmp file pattern (FileSystem.mod): `6A ? 68 ? ? ? ? 64 A1 ? ? ? ? 50 64 89 25 ? ? ? ? 83 EC ? A1 ? ? ? ? 53 55`
 
+## File Formats
+
+Each file format is handled by its own module. `GObj_<name>.mod`.
+
+## Building
+
+.NET 10.0 SDK.
+
+## License
+
+MIT License.
